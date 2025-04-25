@@ -1,0 +1,39 @@
+{
+  "name": "ctm-api",
+  "version": "1.0.0",
+  "description": "Api for Caseworker Task Management Aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI.git"
+  },
+  "keywords": [
+    "Api",
+    "Caseworker",
+    "Task",
+    "Management",
+    "code",
+    "challenge"
+  ],
+  "author": "ILIYAN YORDANOV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI/issues"
+  },
+  "homepage": "https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.0"
+  }
+}
