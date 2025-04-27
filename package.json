@@ -29,7 +29,8 @@
   "homepage": "https://github.com/YordanovDnA/HMCTS-DevChallenge-TasksAPI#readme",
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
