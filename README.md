@@ -36,3 +36,7 @@ It will seed the database with some tasks to work with.
 ### Starting the server
 
 **`npm run dev`**
+
+### Testing
+
+**`npm run test`**
