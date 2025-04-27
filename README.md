@@ -1,42 +1,70 @@
 # HMCTS-DevChallenge-TasksAPI
 
-**API** built using **_Node.js_** & **_Express_** using **_MongoDB_** as database. Part of **Junior Software Developer** job application coding challange with **HMCTS**
+A **Node.js** and **Express** RESTful API for managing tasks.  
+Part of the **Junior Software Developer** coding challenge for **HMCTS**.
 
-For front-end repository visit: https://github.com/YordanovDnA/HMCTS-DevChallenge-Tasks-Front-end
+> For the front-end repository, visit: [HMCTS-DevChallenge-Front-end](https://github.com/YordanovDnA/HMCTS-DevChallenge-Tasks-Front-end)
 
-## Dependanices used:
+---
 
-- **_Express_**: Web framework
+## Dependencies used
 
-- **_Mongoose_**: MongoDB ORM
+- **_Express_** – Web server framework
+- **_Mongoose_** – MongoDB object modeling
+- **_dotenv_** – Environment variable management
+- **_Cors_** – Middleware for Cross-Origin Resource Sharing
+- **_Jest_** and **_Supertest_** – For testing
 
-- **_Dotenv_**: For environment variables
+---
 
-- **_Cors_**: Handles Cross-Origin requests
+## Installation and Setup
 
-- **_Nodemon_**: Auto-reloads the server on changes (dev only)
+Clone the repository and install dependencies:
 
-- **_Jest_**: For testing
+```bash
+npm install
+```
 
-- **_Supertest_**: For testing
+|Make sure you have a running instance of MongoDB (local or cloud like MongoDB Atlas).
 
-## Installation and setup
+Create a .env file in the root directory and add your environment variables:
 
-Clone the repository and run:
-**`npm install`**
+```bash
+MONGO_URI=your_mongo_db_connection_string
+PORT=5000
+```
 
-on the terminal using **VSCode** your prefered method.
+## Running the API
 
-### Seeding the database
+Start the development server with:
 
-**`npm run seed`**
+```bash
+npm run dev
+```
 
-It will seed the database with some tasks to work with.
+**_(uses nodemon for automatic server restarts)_**
 
-### Starting the server
+Or, to start normally:
 
-**`npm run dev`**
+```bash
+npm start
+```
 
-### Testing
+The server will run by default on:
+http://localhost:5000
 
-**`npm run test`**
+## API endpoints
+
+Method | Endpoint | Description
+GET | /api/v1/ctm/tasks | Fetch all tasks
+POST | /api/v1/ctm/tasks | Create a new task
+PATCH | /api/v1/ctm/tasks/:id | Update task status
+DELETE | /api/v1/ctm/tasks/:id | Delete a task by ID
+
+## Running tests
+
+```bash
+npm run test
+```
+
+This will run backend unit and integration tests using Jest and Supertest.
