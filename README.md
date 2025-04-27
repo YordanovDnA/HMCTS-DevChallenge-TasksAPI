@@ -55,11 +55,12 @@ http://localhost:5000
 
 ## API endpoints
 
-Method | Endpoint | Description
-GET | /api/v1/ctm/tasks | Fetch all tasks
-POST | /api/v1/ctm/tasks | Create a new task
-PATCH | /api/v1/ctm/tasks/:id | Update task status
-DELETE | /api/v1/ctm/tasks/:id | Delete a task by ID
+| Method | Endpoint              | Description         |
+| ------ | --------------------- | ------------------- |
+| GET    | /api/v1/ctm/tasks     | Fetch all tasks     |
+| POST   | /api/v1/ctm/tasks     | Create a new task   |
+| PATCH  | /api/v1/ctm/tasks/:id | Update task status  |
+| DELETE | /api/v1/ctm/tasks/:id | Delete a task by ID |
 
 ## Running tests
 
